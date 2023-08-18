@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #999999;
+}
+
+.app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app .header h1 {
+    color: white;
+    font-size: 32px;
+}
+
+.app .calculator {
+    width: 50%;
+    padding: 25px;
+    margin: 30px 0px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+.app .calculator .calculator-input{
+    width: 100%;
+    height: auto;
+}
+
+.app .calculator .calculator-input .data-box{
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 20px 0px;
+    position: relative;
+}
+
+.app .calculator .calculator-input .data-box i {
+    position: absolute;
+    left: 15px;
+    top: 32px;
+    color: #111111;
+    font-size: 14px;
+}
+
+.app .calculator .calculator-input .data-box input{
+    width: 90%;
+    height: 30px;
+    background-color: #f1f1f1;
+    outline: none;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: right;
+}
+
+.app .calculator .calculator-input .data-box input:focus{
+    border: 1px solid #111111;
+}
+
+.app .calculator .calculator-input .data-box label {
+    display: block;
+    margin: 5px 0px;
+}
+
+.app .calculator .calculator-output{
+    width: 100%;
+    height: auto;
+    background-color: #111111;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.app .footer p {
+    font-size: 12px;
+    color: white;
+}
+
+.app .calculator .calculator-output p, h2 {
+    color: white;
+}
+
+.app .calculator .calculator-output button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #444444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 70px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+@media screen and (max-width: 599px) {
+    .app .calculator {
+        width: 90%;
+        padding: 25px;
+        margin: 30px 0px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app .calculator .calculator-input .data-box input{
+        width: 100%;
+    }
+}
